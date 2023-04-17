@@ -5,5 +5,6 @@
     <string name="answer_hint">Enter answer here</string>
     <string name="save_flash_card_button">Save Flashcard</string>
     <string name="flash_card_empty_error">Please enter both a question and an answer.</string>
+    <string name="flash_card_saved">Flash Card Saved</string>
 
 </resources>

@@ -7,12 +7,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.content.Intent;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class NewFlashCardActivity extends AppCompatActivity {
 
     private EditText questionEditText;
     private EditText answerEditText;
     private Button saveFlashCardButton;
+
+    private String[] questionArray;
+    private String[] answerArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +30,13 @@ public class NewFlashCardActivity extends AppCompatActivity {
         answerEditText = findViewById(R.id.answerEditText);
         saveFlashCardButton = findViewById(R.id.saveFlashCardButton);
 
+        // Retrieve the question and answer arrays that were passed from MainActivity
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            questionArray = extras.getStringArray("questionArray");
+            answerArray = extras.getStringArray("answerArray");
+        }
+
         saveFlashCardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,6 +44,7 @@ public class NewFlashCardActivity extends AppCompatActivity {
             }
         });
     }
+
 
     private void saveFlashCard() {
         String question = questionEditText.getText().toString().trim();
@@ -40,9 +55,23 @@ public class NewFlashCardActivity extends AppCompatActivity {
             return;
         }
 
-        FlashCard flashCard = new FlashCard(question, answer);
+        // Add the new question and answer to the arrays
+        ArrayList<String> newQuestionList = new ArrayList<>(Arrays.asList(questionArray));
+        ArrayList<String> newAnswerList = new ArrayList<>(Arrays.asList(answerArray));
+        newQuestionList.add(question);
+        newAnswerList.add(answer);
 
-        questionEditText.setText("");
-        answerEditText.setText("");
+        Toast.makeText(this, R.string.flash_card_saved, Toast.LENGTH_SHORT).show();
+
+        // Pass the updated arrays back to MainActivity
+        Intent intent = new Intent();
+        intent.putStringArrayListExtra("updatedQuestionList", newQuestionList);
+        intent.putStringArrayListExtra("updatedAnswerList", newAnswerList);
+        setResult(RESULT_OK, intent);
+        finish();
     }
+
+
+
+
 }

@@ -1,7 +1,6 @@
 package com.example.flashcardapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,21 +16,8 @@ public class ViewFlashCardsActivity extends AppCompatActivity {
 
     private int currentCardIndex = 0;
 
-    private String[] questionArray = {
-            "What is React Native?",
-            "What are the benefits of using React Native?",
-            "What are some popular apps built with React Native?",
-            "How does React Native differ from React?",
-            "What are some limitations of React Native?"
-    };
-
-    private String[] answerArray = {
-            "React Native is a JavaScript framework for building mobile apps that allows developers to use React to create a rich mobile UI from declarative components.",
-            "Some benefits of using React Native include faster development times, reduced costs, the ability to share code between platforms, and a smoother user experience.",
-            "Some popular apps built with React Native include Facebook, Instagram, Airbnb, Uber Eats, and Walmart.",
-            "React is a JavaScript library for building web applications, while React Native is a framework for building native mobile apps. React Native uses native components and APIs, while React renders components to a web page.",
-            "Some limitations of React Native include limited access to native device APIs, less flexibility in UI design, and potential performance issues with complex apps."
-    };
+    private String[] questionArray;
+    private String[] answerArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +28,12 @@ public class ViewFlashCardsActivity extends AppCompatActivity {
         prevButton = findViewById(R.id.prevButton);
         nextButton = findViewById(R.id.nextButton);
         cardNumberTextView = findViewById(R.id.cardNumberTextView);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            questionArray = extras.getStringArray("questionArray");
+            answerArray = extras.getStringArray("answerArray");
+        }
 
         showQuestion();
 
