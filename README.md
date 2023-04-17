@@ -26,4 +26,12 @@ The Flash Card App is a mobile application designed for users to create and stud
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+AppOrSoft Private App License
+
+Copyright (c) 2023 AppOrSoft
+
+This app is the exclusive property of AppOrSoft and is protected by copyright law. This license grants you the right to use the app solely for your personal or internal business purposes.
+
+You may not copy, modify, distribute, sell, or sublicense any part of this app without the express written consent of AppOrSoft. Unauthorized use or distribution of this app may result in legal action.
+
+THIS APP IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL APPORSOFT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE USE OF THIS APP.
