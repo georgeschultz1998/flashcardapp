@@ -30,9 +30,6 @@ The Flash Card App is a mobile application designed for users to create and stud
 3. To add a new flash card to a set, select the desired set from the main menu and click the "Add New Flash Card" button. Enter a question and answer for the card and click "Save".
 4. To study a flash card set, select the desired set from the main menu and click the "View Flash Cards" button. Flip through the cards by clicking on them and track progress using the navigation buttons at the bottom of the screen.
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
 ## License
 AppOrSoft Private App License
 
