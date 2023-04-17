@@ -19,11 +19,27 @@ public class MainActivity extends AppCompatActivity {
     private Spinner arraySpinner;
     private Button newFlashCardButton;
     private Button viewFlashCardsButton;
-    private Button settingsButton;
     private Button addArrayButton;
+    private String[] demoQuestionArray = {
+            "What is React Native?",
+            "What are some benefits of using React Native?",
+            "What are some limitations of React Native?",
+            "What is JSX?",
+            "What is the difference between React and React Native?"
+    };
+
+    private String[] demoAnswerArray = {
+            "React Native is a JavaScript framework used for building mobile applications.",
+            "React Native allows for cross-platform development, code reusability, and hot reloading for faster development.",
+            "React Native has limitations with performance, access to native APIs, and certain platform-specific features.",
+            "JSX is a syntax extension for JavaScript that allows for writing HTML-like code in JavaScript files.",
+            "React is a JavaScript library used for building user interfaces in web applications, while React Native is used for building mobile applications."
+    };
+
     private String[] questionArray = {};
     private String[] answerArray = {};
     private String[][][] flashCardArrays = {
+            {demoQuestionArray, demoAnswerArray},
             {questionArray, answerArray},
     };
 
@@ -38,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
         arraySpinner = findViewById(R.id.arraySpinner);
         newFlashCardButton = findViewById(R.id.newFlashCardButton);
         viewFlashCardsButton = findViewById(R.id.viewFlashCardsButton);
-        settingsButton = findViewById(R.id.settingsButton);
         addArrayButton = findViewById(R.id.addArrayButton);
 
         // Set up the spinner with the array names
@@ -92,20 +107,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        settingsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     private String[] getArrayNames() {
         String[] arrayNames = new String[flashCardArrays.length];
-        for (int i = 0; i < flashCardArrays.length; i++) {
-            arrayNames[i] = "Flash Card Set " + (i + 1);
+        arrayNames[0] = "Demo FlashCard Set ";
+        for (int i = 1; i < flashCardArrays.length; i++) {
+            arrayNames[i] = "Custom FlashCard Set " + (i);
         }
         return arrayNames;
     }
