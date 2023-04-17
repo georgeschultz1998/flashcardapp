@@ -7,7 +7,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Flash Card Array to Modify:"
+        android:minHeight="48dp"
+        android:text="Select Flash Card Set to Modify:"
         android:textSize="16sp"
         android:padding="8dp"/>
 
@@ -15,6 +16,7 @@
         android:id="@+id/arraySpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         android:entries="@array/flash_card_array_names"
         android:prompt="@string/flash_card_array_prompt"
         android:padding="8dp"/>
@@ -23,28 +25,37 @@
         android:id="@+id/newFlashCardButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         android:text="Add New Flash Card"
-        android:padding="8dp"/>
+        android:padding="20dp"
+        android:layout_marginBottom="5dp"
+        />
 
     <Button
         android:id="@+id/viewFlashCardsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         android:text="View Flash Cards"
-        android:padding="8dp"/>
+        android:padding="20dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <Button
+        android:id="@+id/addArrayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Add Flash Card Set"
+        android:padding="20dp"
+        android:layout_marginBottom="5dp"
+        />
 
     <Button
         android:id="@+id/settingsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Settings"
-        android:padding="8dp"/>
-
-    <Button
-        android:id="@+id/addArrayButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add Flash Card Array"
-        android:padding="8dp"/>
+        android:padding="20dp"/>
 
 </LinearLayout>
