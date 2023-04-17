@@ -5,11 +5,6 @@ The Flash Card App is a mobile application designed for users to create and stud
 
 ## Screenshots
 ![Screenshot 1](https://drive.google.com/uc?id=1qiAvNbGIrlcTdxpIDe-h53trspm1YX6x)
-![Screenshot 2](https://drive.google.com/uc?id=1hT6wxjKeC71GkOS4rPWgxVkIW8Q1OhQT)
-![Screenshot 3](https://drive.google.com/uc?id=1SXy_L1_ZK09YjwJ01Np13yV5bsUwyQaR)
-![Screenshot 4](https://drive.google.com/uc?id=1TvW1gtvXSh-EG5yHrd7PsBfNk5RKac74)
-![Screenshot 5](https://drive.google.com/uc?id=1jPE7zWTjAil4ACIz-64isVmNwvq4f5Wp)
-![Screenshot 6](https://drive.google.com/uc?id=1tkJgVrZPLgf0DA5_hPBIXui_6PLLrTeT)
 
 ## Installation
 1. Clone the repository to your local machine.
