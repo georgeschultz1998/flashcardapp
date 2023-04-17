@@ -20,6 +20,7 @@ public class NewFlashCardActivity extends AppCompatActivity {
 
     private String[] questionArray;
     private String[] answerArray;
+    private int selectedArrayIndex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class NewFlashCardActivity extends AppCompatActivity {
         if (extras != null) {
             questionArray = extras.getStringArray("questionArray");
             answerArray = extras.getStringArray("answerArray");
+            selectedArrayIndex = extras.getInt("selectedArrayIndex");
         }
 
         saveFlashCardButton.setOnClickListener(new View.OnClickListener() {
@@ -67,11 +69,10 @@ public class NewFlashCardActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.putStringArrayListExtra("updatedQuestionList", newQuestionList);
         intent.putStringArrayListExtra("updatedAnswerList", newAnswerList);
+        intent.putExtra("selectedArrayIndex", selectedArrayIndex);
         setResult(RESULT_OK, intent);
         finish();
     }
-
-
 
 
 }
