@@ -12,8 +12,8 @@ The Flash Card App is a mobile application designed for users to create and stud
   </tr>
    <tr>
     <td><img src="https://github.com/georgeschultz1998/flashcardapp/blob/main/DemoImages/AddFlashCard.png?raw=true," alt="Screenshot 1" width="500" height="500"></td>
-    <td><img src="https://github.com/georgeschultz1998/flashcardapp/blob/main/DemoImages/ViewAddedFlashCard.png?raw=true," alt="Screenshot 1" width="500" height="500"></td>
-        <td><img src="https://github.com/georgeschultz1998/flashcardapp/blob/main/DemoImages/AddFlashCardSet.png?raw=true," alt="Screenshot 1" width="500" height="500"></td>
+    <td><img src="https://github.com/georgeschultz1998/flashcardapp/blob/main/DemoImages/ViewAddedFlashCard.png?raw=true," alt="Screenshot 1" width="500""></td>
+        <td><img src="https://github.com/georgeschultz1998/flashcardapp/blob/main/DemoImages/AddFlashCardSet.png?raw=true," alt="Screenshot 1" width="500""></td>
   </tr>
 </table>
 
