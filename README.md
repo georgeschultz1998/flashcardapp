@@ -4,7 +4,7 @@
 The Flash Card App is a mobile application designed for users to create and study flash cards on-the-go. Users can create custom flash card sets and add, edit, or delete individual cards within each set. The app also features a study mode that allows users to flip through cards and track their progress.
 
 ## Screenshots
-![Screenshot 1](https://raw.githubusercontent.com/georgeschultz1998/flashcardapp/main/demoimages/Snip20230417_168.png)
+<img src="https://raw.githubusercontent.com/georgeschultz1998/flashcardapp/main/demoimages/Snip20230417_168.png" alt="Screenshot 1" width="500" height="1000">
 
 ## Installation
 1. Clone the repository to your local machine.
